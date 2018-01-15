@@ -3,6 +3,8 @@
 </h3>
 <button class="btn btn-outline-danger btn-sm"
     [routerLink]="['heroes']">Regresar</button>
+<button class="btn btn-outline-primary btn-sm"
+    (click)="agregarNuevo(forma)">Nuevo Heroe</button>
 <hr>
 
 <div class="row animated fadeIn fast">
@@ -15,7 +17,7 @@
       <div class="form-group">
         <label>Casa</label>
         <select [(ngModel)]="heroe.casa" class="form-control" name="casa" id="">
-          <option value="DC Comics">DC Comics</option>
+          <option value="DC Comics" selected>DC Comics</option>
           <option value="Marvel Comics">Marvel Comics</option>
         </select>
       </div>
